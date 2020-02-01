@@ -54,10 +54,5 @@ def self.find_by_name(name)
   DB[:conn].execute(sql, name)
 end
   
-  def self.find_by_name(name)
-  sql = "SELECT * FROM #{self.table_name} WHERE name = ?"
-  DB[:conn].execute(sql, name)
-end
-  
-  
+
 end
